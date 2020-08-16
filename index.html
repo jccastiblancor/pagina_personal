@@ -9,99 +9,243 @@
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
   </head>
+
+  <!--Color palette
+    opcion 1
+    #88BDBC
+    #254E58
+    #112D32
+    #4f4a41
+    #6e6658
+
+    opcion 2
+    #61892f
+    #86c232
+    #222629
+    #474b4f
+    #6b6e70
+  -->
+
   <body>
+    <!-- header con un un título de primer nivel y una fotografía personal-->
     <div>
-      <h1>Juan Camilo Castiblanco</h1>
-      <img src="./img/jc.jpeg" alt="foto" width="150" height="200" />
+      <header>
+        <h1>Juan Camilo Castiblanco</h1>
+        <img src="./img/jc.jpeg" alt="foto" width="150" height="200" />
+      </header>
     </div>
 
+    <!-- barra de navegación con las secciónes y enlaces a cada sección-->
     <div>
       <nav>
         <ul>
           <li><a href="#bienvenida">Bienvenida</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#bibliografico">Datos Bibliograficos</a></li>
+          <li><a href="#academicos">Datos Academicos</a></li>
+          <li><a href="#interes">Interes</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
 
+    <!-- contenido principal con las secciones mensaje de bienvenida, datos bibliograficos, datos academicos, sitios de interes y fromulario de contacto-->
     <div>
-      <p id="bienvenida">Bienvenido a la pagina</p>
+      <!--Seccion de bienvenida con titulos y parrafos-->
+      <section id="bienvenida">
+        <h2>Bienvenido a la pagina</h2>
+        <p>
+          Bienvenido a mi pagina web, en está pagina se muestra información
+          sobre mi y de mi trabajo como ingeniero, algunas habilidades que me
+          caracterisan son el trabajo en equipo, la buena comunicación, el
+          pensamiento crítico y mi pasión por el desarrollo web y la robotica.
+        </p>
+        <p>
+          Ademas tambien se muestran algunos de mis intereses, datos
+          bibliograficos e infromación de contacto.
+        </p>
+      </section>
 
-      <h2>Mas información sobre mi</h2>
-      <dl>
-        <dt>Formación</dt>
-        <dd>
-          Ingeniero Electronico e Ingeniero de Sistemas de la Universidad de los
-          Andes
-        </dd>
-
-        <dt>Actividades de investigación</dt>
-        <dd>grupo de investigación de machine learning</dd>
-      </dl>
-
-      <div id="tecnologias">
-        Tecnologias
-        <table>
+      <!--Seccion de datos bibliograficos presentados con una tabla-->
+      <section id="bibliografico">
+        <h2>Datos bibliograficos</h2>
+        <table style="border: 1px solid black;">
           <tr>
-            <th>Python</th>
-            <th>React</th>
-            <th>Angular</th>
-            <th>Django</th>
-            <th>JavaScript</th>
-            <th>ROS</th>
-            <th>Java</th>
+            <td>Fecha nacimiento</td>
+            <td type="date">29-10-1998</td>
           </tr>
           <tr>
+            <td>Nacionalidad</td>
+            <td>Colombiana</td>
+          </tr>
+        </table>
+      </section>
+
+      <!--Seccion de datos academicos presentados con listas-->
+      <section id="academicos">
+        <h2>Datos Académicos</h2>
+
+        <div>
+          <dl>
+            <dt>Formación</dt>
+            <dd>
+              Ingeniero Electronico e Ingeniero de Sistemas de la Universidad de
+              los Andes
+            </dd>
+
+            <dt>Actividades de investigación</dt>
+            <dd>grupo de investigación de machine learning</dd>
+          </dl>
+        </div>
+
+        <div>
+          <h3>Tecnologias</h3>
+          <table>
+            <tr>
+              <th width="120px">Python</th>
+              <th width="120px">C++</th>
+              <th width="120px">ROS</th>
+              <th width="120px">Java</th>
+              <th width="120px">Angular</th>
+              <th width="120px">React</th>
+              <th width="120px">Django</th>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"
+                  alt="Python"
+                  width="110"
+                  height="110"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                  alt="C"
+                  width="110"
+                  height="110"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://costaricamakers.com/wp-content/uploads/2020/01/ros-logo.png"
+                  alt="ROS"
+                  width="120"
+                  height="60"
+                  style="vertical-align: middle;"
+                />
+              </td>
+              <td style="vertical-align: middle;">
+                <img
+                  src="https://qph.fs.quoracdn.net/main-qimg-c43424186b9c089b9aa1d64c7f1989c1.webp"
+                  alt="Java"
+                  width="110"
+                  height="110"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://seeklogo.com/images/A/angular-logo-B76B1CDE98-seeklogo.com.png"
+                  alt="Angular"
+                  width="110"
+                  height="110"
+                />
+              </td>
+              <td>
+                <img
+                  src="./img/react.png"
+                  alt="React"
+                  width="110"
+                  height="110"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png"
+                  alt="Django"
+                  width="90"
+                  height="110"
+                  style="vertical-align: middle;"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!--Seccion sitios de interes con videos en un iframe, enlaces de interes e imagenes-->
+      <section id="interes">
+        <h2>Sitios de interes</h2>
+        <table>
+          <tr>
             <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
+              <a href="https://www.reddit.com/r/dankmemes/">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://image.flaticon.com/icons/png/512/49/49398.png"
+                  alt="reddit"
+                />
+              </a>
             </td>
             <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
+              <a
+                href="https://www.youtube.com/channel/UCr3cBLTYmIK9kY0F_OdFWFQ"
+              >
+                <img
+                  width="150"
+                  height="150"
+                  alt="YouTube"
+                  src="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-icono-de-youtube-logo-by-vexels.png"
+                />
+              </a>
             </td>
             <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
-            </td>
-            <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
-            </td>
-            <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
-            </td>
-            <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
-            </td>
-            <td>
-              <img src="./img/react.png" alt="Python" width="60" height="60" />
+              <a href="https://starcraft2.com/es-es/">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://blznav.akamaized.net/img/games/logo-sc2-6e33583ba0547b6a.png"
+                  alt="Starcraft"
+                />
+              </a>
             </td>
           </tr>
         </table>
-      </div>
 
-      <div id="contacto">
-        <h2>Contacto</h2>
-      </div>
+        <iframe
+          width="400"
+          height="220"
+          src="https://www.youtube.com/embed/k9j2Ayr19Z0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"
+        >
+        </iframe>
+      </section>
 
-      <div>
-        <p>Si desea ponerse en contacto llene el siguiente formulario</p>
-        <form>
-          <label>Correo</label>
-          <input type="mail" />
-          <br />
+      <!--Formulario de contacto-->
+      <section id="contacto">
+        <div>
+          <h2>Contacto</h2>
+          <p>Si desea ponerse en contacto llene el siguiente formulario</p>
+          <form>
+            <label>Correo</label>
+            <input type="mail" />
+            <br />
 
-          <label>Telefono</label>
-          <input type="tel" />
-          <br />
+            <label>Telefono</label>
+            <input type="tel" />
+            <br />
 
-          <label>Contenido</label>
-          <input type="text" />
-          <br />
+            <label>Mensaje</label>
+            <input type="text" />
+            <br />
 
-          <button>Enviar</button>
-        </form>
-      </div>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
     </div>
 
+    <!-- Pie de pagina con información de contacto y links a redes sociales-->
     <div>
       <footer>
         <p>Detalles</p>
@@ -113,6 +257,22 @@
           <li>
             Correo
             <a href="mailto:jcmilo29@gmail.com"> jcmilo29@gmail.com</a>
+          </li>
+        </ul>
+
+        <h3>Mis redes</h3>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/juan-camilo-castiblanco-57b775161/"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/jccastiblancor">github</a>
           </li>
         </ul>
       </footer>
