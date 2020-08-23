@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run lite",
+    "dev": "npm run lite",
     "lite": "lite-server"
   },
   "author": "",
