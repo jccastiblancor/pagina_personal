@@ -8,274 +8,485 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
-  <!--Color palette
-    opcion 1
-    #88BDBC
-    #254E58
-    #112D32
-    #4f4a41
-    #6e6658
-
-    opcion 2
-    #61892f
-    #86c232
-    #222629
-    #474b4f
-    #6b6e70
-  -->
-
   <body>
-    <!-- header con un un título de primer nivel y una fotografía personal-->
-    <div>
-      <header>
-        <h1>Juan Camilo Castiblanco</h1>
-        <img src="./img/jc.jpeg" alt="foto" width="150" height="200" />
-      </header>
+    <!-- banner-->
+    <div
+      class="card card-image"
+      style="
+        background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);
+      "
+    >
+      <div class="text-white text-center py-5 px-4 my-5">
+        <div>
+          <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+            <strong>Juan Camilo Castiblanco</strong>
+          </h2>
+          <p class="mx-5 mb-5">
+            Welcome to my personal web page, here you can find information about
+            me and my projects.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- barra de navegación con las secciónes y enlaces a cada sección-->
     <div>
-      <nav>
-        <ul>
-          <li><a href="#bienvenida">Bienvenida</a></li>
-          <li><a href="#bibliografico">Datos Bibliograficos</a></li>
-          <li><a href="#academicos">Datos Academicos</a></li>
-          <li><a href="#interes">Interes</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#presentation">Presentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyects">Proyects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#frameworks">Know Frameworks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
-    <!-- contenido principal con las secciones mensaje de bienvenida, datos bibliograficos, datos academicos, sitios de interes y fromulario de contacto-->
-    <div>
-      <!--Seccion de bienvenida con titulos y parrafos-->
-      <section id="bienvenida">
-        <h2>Bienvenido a la pagina</h2>
-        <p>
-          Bienvenido a mi pagina web, en está pagina se muestra información
-          sobre mi y de mi trabajo como ingeniero, algunas habilidades que me
-          caracterisan son el trabajo en equipo, la buena comunicación, el
-          pensamiento crítico y mi pasión por el desarrollo web y la robotica.
-        </p>
-        <p>
-          Ademas tambien se muestran algunos de mis intereses, datos
-          bibliograficos e infromación de contacto.
-        </p>
-      </section>
+    <!-- contenido principal -->
+    <div class="container-background">
+      <div class="container container-body">
+        <!-- presentacion personal y datos academicos-->
+        <section id="presentation">
+          <div class="row row-content">
+            <div class="col-12">
+              <div class="media">
+                <img src="./img/jc.jpeg" alt="foto" class="avatar avatar-lg" />
+                <div class="media-body" style="padding-left: 20px;">
+                  <h2>Hello there</h2>
+                  <p class="d-none d-sm-block">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus qui quisquam error dignissimos dolore, nisi ea facilis
+                    alias consectetur repudiandae. Culpa doloremque quae
+                    molestias corrupti aliquam sint quod adipisci unde.
+                  </p>
+                  <p>To download my cv click the following button</p>
+                  <a
+                  class="btn btn-danger"
+                  href="./docs/Juan_Camilo_Castiblanco_Rodríguez.pdf"
+                  >Download CV 
+                    <i 
+                    class="fa fa-file fa-lg"></i></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <br />
+              <h2>Education</h2>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="media">
+                <img
+                  src="https://subcontracteu.com/uploads/pages/535eee07e8fd4c9fabc377cd464c1d74.png"
+                  alt="foto"
+                  class="avatar avatar-sm"
+                />
+                <div
+                  class="media-body"
+                  style="padding-left: 20px; padding-top: 15px;"
+                >
+                  <p>
+                    Electronics Engineering at Universidad de los Andes
+                  </p>
+                </div>
+              </div>
+              <br />
+              <div class="media">
+                <img
+                  src="https://www.eschoolnews.com/files/2016/12/computer-science-education.jpg"
+                  alt="foto"
+                  class="avatar avatar-sm"
+                />
+                <div
+                  class="media-body"
+                  style="padding-left: 20px; padding-top: 15px;"
+                >
+                  <p>
+                    Computer Science at Universidad de los Andes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <div class="row">
+                <div class="col-6">
+                  <p>Fluid English</p>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star-half fa-lg"></i>
+                </div>
+                <div class="col-6">
+                  <p>Native Spanish</p>
+                </div>
+                <div class="col-6">
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                  <i class="fa fa-star fa-lg"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <!--Seccion de datos bibliograficos presentados con una tabla-->
-      <section id="bibliografico">
-        <h2>Datos bibliograficos</h2>
-        <table style="border: 1px solid black;">
-          <tr>
-            <td>Fecha nacimiento</td>
-            <td type="date">29-10-1998</td>
-          </tr>
-          <tr>
-            <td>Nacionalidad</td>
-            <td>Colombiana</td>
-          </tr>
-        </table>
-      </section>
+        <!--Proyectos o trabajos en los que he participado-->
+        <div class="rwo row-content">
+          <section id="proyects">
+            <h2>Previous Work</h2>
+            <div class="card-group">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./img/robotica.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Robotics Proyect</h5>
+                  <p class="card-text">
+                    A robotics proyect that simulates the autonomous movement of
+                    a robot in a unsupervised enviroment. Using the ROS
+                    (Robotics Operating System) framework and some path planing
+                    algorithms like A* we were able to control the movement of
+                    the robot, the simulation was runned in the v-rep enviroment
+                    and the UI (User Interface) to saw the robot info and to
+                    indicate the destination point was builded using bootstrap,
+                    javascript and html.
+                  </p>
+                  
+                  <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                  </iframe>
 
-      <!--Seccion de datos academicos presentados con listas-->
-      <section id="academicos">
-        <h2>Datos Académicos</h2>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <a
+                        href="https://github.com/jccastiblancor/proyecto_final_3"
+                        >See more ...</a
+                      >
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Steven Grinder Full stack development course
+                  </h5>
+                  <p class="card-text">
+                    Udemy course in which I build and deploy a fullstack web
+                    apps with NodeJS, React, Redux, Express, and MongoDB.
+                  </p>
 
-        <div>
-          <dl>
-            <dt>Formación</dt>
-            <dd>
-              Ingeniero Electronico e Ingeniero de Sistemas de la Universidad de
-              los Andes
-            </dd>
-
-            <dt>Actividades de investigación</dt>
-            <dd>grupo de investigación de machine learning</dd>
-          </dl>
+                  <p>
+                    I am currently working in this course some of the features
+                    of this course are
+                  </p>
+                  <ul>
+                    <li>Billing payments</li>
+                    <li>Handling Email</li>
+                    <li>Authentication</li>
+                  </ul>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <a href="https://git.heroku.com/serene-peak-35767.git">
+                        See more ...
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://lh3.googleusercontent.com/proxy/lBnvqbWlSyGU1lI9G7etxkGM6Qn48YfOGwfZxuxxnEQOpiFSJzhsNcUvjy88TPFwC77tL_fqEW82XubKzr6FXz7PFZNY2c7zpWuQ7uFWHYZI-MXtYKg5J6FkQnlAnmmfFu26qtnZfEK_puaqbE8"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Portable and Low-Cost Device for Audio Distress
+                    SignalRecognition in Urban Areas
+                  </h5>
+                  <p class="card-text">
+                    Togheter with a machine learning group, we design a portable
+                    and low cost device for audiodistress signal recognition in
+                    real urban scenarios. We build a database of audio recorded
+                    in real urban areas using a low costmicrophone, using this
+                    database, we trained different architectures of
+                    convolutional neural networks that processed temporal and
+                    frequency features to accurately recognize audio distress
+                    signals in noisy environments. Then, we deployed the trained
+                    model on a Raspberry Pi.
+                  </p>
+                  <h4>Sample audio:</h4>
+                  <audio controls>
+                    <source src="./audios/problema.wav" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <a href="https://github.com/jfgf11/Problema-Especial">
+                        See more ...
+                      </a>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
 
-        <div>
-          <h3>Tecnologias</h3>
-          <table>
-            <tr>
-              <th width="120px">Python</th>
-              <th width="120px">C++</th>
-              <th width="120px">ROS</th>
-              <th width="120px">Java</th>
-              <th width="120px">Angular</th>
-              <th width="120px">React</th>
-              <th width="120px">Django</th>
-            </tr>
-            <tr>
-              <td>
+        <!--tecnologias en las que tengo experiencia-->
+        <section id="frameworks">
+          <div class="row row-content">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h2>Programming Languajes</h2>
+              </div>
+
+              <div class="col-6 col-md-4 col-img">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"
                   alt="Python"
-                  width="110"
-                  height="110"
+                  class="img-list"
                 />
-              </td>
-              <td>
+              </div>
+
+              <div class="col-6 col-md-4 col-img">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
                   alt="C"
-                  width="110"
-                  height="110"
+                  class="img-list"
                 />
-              </td>
-              <td>
-                <img
-                  src="https://costaricamakers.com/wp-content/uploads/2020/01/ros-logo.png"
-                  alt="ROS"
-                  width="120"
-                  height="60"
-                  style="vertical-align: middle;"
-                />
-              </td>
-              <td style="vertical-align: middle;">
+              </div>
+
+              <div class="col-6 col-md-4 col-img">
                 <img
                   src="https://qph.fs.quoracdn.net/main-qimg-c43424186b9c089b9aa1d64c7f1989c1.webp"
                   alt="Java"
-                  width="110"
-                  height="110"
+                  class="img-list"
                 />
-              </td>
-              <td>
+              </div>
+
+              <div class="col-6 col-md-6 col-img">
+                <img
+                  src="https://alexbruga.files.wordpress.com/2015/12/sql-logo.png"
+                  alt="Java"
+                  class="img-list"
+                />
+              </div>
+
+              <div class="col-12 col-md-6 col-img">
+                <img
+                  src="https://lh3.googleusercontent.com/proxy/oeMxT8X4ocUqZtmjS6PYfSBIk4NbCvf_Nao15AttxDtrBMsIhIvGMFXjXodrzFDjYfDbZ6h-HJixJPR-PPTKYPY9cREPbxHndMJqOTELM8DtWQqbdnyS431nxBqR0edkO-vOS5I"
+                  alt="Java"
+                  class="img-list"
+                />
+              </div>
+
+              <div class="col-12 text-center">
+                <h2>Frameworks</h2>
+              </div>
+
+              <div class="col-6 col-md-3 col-img">
+                <img
+                  src="https://costaricamakers.com/wp-content/uploads/2020/01/ros-logo.png"
+                  alt="ROS"
+                  class="img-list"
+                />
+              </div>
+
+              <div class="col-6 col-md-3 col-img">
                 <img
                   src="https://seeklogo.com/images/A/angular-logo-B76B1CDE98-seeklogo.com.png"
                   alt="Angular"
-                  width="110"
-                  height="110"
+                  class="img-list"
                 />
-              </td>
-              <td>
-                <img
-                  src="./img/react.png"
-                  alt="React"
-                  width="110"
-                  height="110"
-                />
-              </td>
-              <td>
+              </div>
+
+              <div class="col-6 col-md-3 col-img">
+                <img src="./img/react.png" alt="React" class="img-list"" />
+              </div>
+
+              <div class="col-6 col-md-3 col-img">
                 <img
                   src="https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png"
                   alt="Django"
-                  width="90"
-                  height="110"
-                  style="vertical-align: middle;"
+                  class="img-list"
                 />
-              </td>
-            </tr>
-          </table>
-        </div>
-      </section>
+              </div>
+            </div>
 
-      <!--Seccion sitios de interes con videos en un iframe, enlaces de interes e imagenes-->
-      <section id="interes">
-        <h2>Sitios de interes</h2>
-        <table>
-          <tr>
-            <td>
-              <a href="https://www.reddit.com/r/dankmemes/">
-                <img
-                  width="150"
-                  height="150"
-                  src="https://image.flaticon.com/icons/png/512/49/49398.png"
-                  alt="reddit"
-                />
-              </a>
-            </td>
-            <td>
-              <a
-                href="https://www.youtube.com/channel/UCr3cBLTYmIK9kY0F_OdFWFQ"
-              >
-                <img
-                  width="150"
-                  height="150"
-                  alt="YouTube"
-                  src="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-icono-de-youtube-logo-by-vexels.png"
-                />
-              </a>
-            </td>
-            <td>
-              <a href="https://starcraft2.com/es-es/">
-                <img
-                  width="150"
-                  height="150"
-                  src="https://blznav.akamaized.net/img/games/logo-sc2-6e33583ba0547b6a.png"
-                  alt="Starcraft"
-                />
-              </a>
-            </td>
-          </tr>
-        </table>
+            <div class="row"></div>
+          </div>
+        </section>
 
-        <iframe
-          width="400"
-          height="220"
-          src="https://www.youtube.com/embed/k9j2Ayr19Z0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"
-        >
-        </iframe>
-      </section>
+        <section id="contact">
+          <div class="row row-content">
+            <!--Formulario de contacto-->
 
-      <!--Formulario de contacto-->
-      <section id="contacto">
-        <div>
-          <h2>Contacto</h2>
-          <p>Si desea ponerse en contacto llene el siguiente formulario</p>
-          <form>
-            <label>Correo</label>
-            <input type="mail" />
-            <br />
+            <div class="col-12 offset-md-1 col-md-4 offset-md-1">
+              <h2>Contact</h2>
+              <p>
+                If you want to get in contact please submit the following form
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <form>
+                <div class="form-group">
+                  <label>Mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Text</label>
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter a description here"
+                    rows="3"
+                  ></textarea>
+                </div>
 
-            <label>Telefono</label>
-            <input type="tel" />
-            <br />
-
-            <label>Mensaje</label>
-            <input type="text" />
-            <br />
-
-            <button>Enviar</button>
-          </form>
-        </div>
-      </section>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <!-- Pie de pagina con información de contacto y links a redes sociales-->
-    <div>
-      <footer>
-        <p>Detalles</p>
-        <ul>
-          <li>
-            Bogotá, Colombia
-          </li>
-          <li>tel: +57 3153040491</li>
-          <li>
-            Correo
-            <a href="mailto:jcmilo29@gmail.com"> jcmilo29@gmail.com</a>
-          </li>
-        </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="offset-1 col-5">
+            <h5 class="text-uppercase">Details</h5>
+            <ul class="list-unstyled">
+              <li>
+                Bogotá, Colombia
+              </li>
+              <li>
+                <i class="fa fa-phone fa-lg"></i>
+                tel:
+                <a href="tel:+573153040491"> +57 3153040491 </a>
+              </li>
+              <li>
+                <i class="fa fa-envelope fa-lg"></i>
+                Mail
+                <a href="mailto:jcmilo29@gmail.com">
+                  jcmilo29@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <h3>Mis redes</h3>
-        <ul>
-          <li>
-            <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/juan-camilo-castiblanco-57b775161/"
-              >Linkedin</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/jccastiblancor">github</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+          <div class="col-6 align-self-center">
+            <h5 class="text-uppercase">Social media</h5>
+            <div class="row">
+              <div class="col-6 col-sm-2 align-self-center">
+                <!--Facebook-->
+                <a
+                  class="btn btn-floating btn-fb"
+                  type="button"
+                  role="button"
+                  href="http://www.facebook.com/profile.php?id="
+                  ><i class="fa fa-facebook-f fa-lg icon-align"></i
+                ></a>
+              </div>
+              <div class="col-6 col-sm-2 align-self-center">
+                <!--Linkedin-->
+                <a
+                  class="btn btn-floating btn-li"
+                  type="button"
+                  role="button"
+                  href="https://www.linkedin.com/in/juan-camilo-castiblanco-57b775161/"
+                  ><i class="fa fa-linkedin fa-lg icon-align"></i
+                ></a>
+              </div>
+              <div class="col-6 col-sm-2 align-self-center">
+                <!--Github-->
+                <a
+                  class="btn btn-floating btn-git"
+                  type="button"
+                  role="button"
+                  href="https://github.com/jccastiblancor"
+                  ><i class="fa fa-github fa-lg icon-align"></i
+                ></a>
+              </div>
+              <div class="col-6 col-sm-2 align-self-center">
+                <!--WhatsApp-->
+                <a
+                  class="btn btn-floating btn-whatsapp"
+                  type="button"
+                  role="button"
+                  href="https://wa.me/573153040491 "
+                  ><i class="fa fa-whatsapp fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+          © 2020: Juan Camilo Castiblanco
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

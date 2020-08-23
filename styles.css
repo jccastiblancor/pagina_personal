@@ -1,0 +1,100 @@
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.avatar-sm {
+  width: 60px;
+  height: 60px;
+}
+
+.avatar-lg {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.btn-floating {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-fb {
+  color: white;
+  background-color: #3b5998;
+  box-shadow: 3px 3px 8px #888888;
+}
+
+.btn-li {
+  color: white;
+  background-color: #0e76a8;
+  box-shadow: 3px 3px 8px #888888;
+}
+
+.btn-git {
+  color: white;
+  background-color: #211f1f;
+  box-shadow: 3px 3px 8px #888888;
+}
+
+.btn-whatsapp {
+  color: white;
+  background-color: #4fce5d;
+  box-shadow: 3px 3px 8px #888888;
+}
+
+.icon-align {
+  vertical-align: middle;
+  align-self: bottom;
+}
+
+.img-list {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  max-width: 110px;
+  height: 100%;
+  max-height: 150px;
+}
+
+.col-img {
+  text-align: center;
+}
+
+.fa-star {
+  color: #f9d71c;
+}
+.fa-star-half {
+  color: #f9d71c;
+}
+
+.t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.container-body {
+  /*color: #59405c;
+  background-color: #4b5d67;*/
+}
+
+.container-background {
+  /*background-color: #322f3d;*/
+}
