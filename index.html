@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="#">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,24 +21,19 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <!-- banner-->
     <div
       class="card card-image"
-      style="
-        background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);
-      "
+      style="background-image: url('./img/banner.png');"
     >
-      <div class="text-white text-center py-5 px-4 my-5">
+      <div class=" text-center py-5 px-4 my-5">
         <div>
-          <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+          <h1 class="card-title h1-responsive pt-3 mb-5 font-bold">
             <strong>Juan Camilo Castiblanco</strong>
-          </h2>
+          </h1>
           <p class="mx-5 mb-5">
             Welcome to my personal web page, here you can find information about
             me and my projects.
@@ -69,7 +65,7 @@
               <a class="nav-link" href="#proyects">Proyects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#frameworks">Know Frameworks</a>
+              <a class="nav-link" href="#frameworks">Technology</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -89,12 +85,12 @@
               <div class="media">
                 <img src="./img/jc.jpeg" alt="foto" class="avatar avatar-lg" />
                 <div class="media-body" style="padding-left: 20px;">
-                  <h2>Hello there</h2>
+                  <h1>Juan Camilo</h1>
                   <p class="d-none d-sm-block">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Minus qui quisquam error dignissimos dolore, nisi ea facilis
-                    alias consectetur repudiandae. Culpa doloremque quae
-                    molestias corrupti aliquam sint quod adipisci unde.
+                    I am a resourceful and dedicated university student with excellent analytical skills and
+                    a demonstrated commitment. Strong organizational abilities with proven successes
+                    managing multiple academic projects. Well-rounded and professional team player that 
+                    effectively maintains working relationships with co-workers, supervisors, and clients.
                   </p>
                   <p>To download my cv click the following button</p>
                   <a
@@ -144,7 +140,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 text-center">
-              <div class="row">
+              <div class="row" style="padding-top: 30px;">
                 <div class="col-6">
                   <p>Fluid English</p>
                 </div>
@@ -193,11 +189,10 @@
                     indicate the destination point was builded using bootstrap,
                     javascript and html.
                   </p>
-                  
-                  <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-                  </iframe>
-
+                  <div class="videoWrapper">
+                    <iframe title="robotics" width="180px" height="300px" src="./img/robotics2.mp4">
+                    </iframe>
+                  </div>
                   <p class="card-text">
                     <small class="text-muted">
                       <a
@@ -244,7 +239,7 @@
               <div class="card">
                 <img
                   class="card-img-top"
-                  src="https://lh3.googleusercontent.com/proxy/lBnvqbWlSyGU1lI9G7etxkGM6Qn48YfOGwfZxuxxnEQOpiFSJzhsNcUvjy88TPFwC77tL_fqEW82XubKzr6FXz7PFZNY2c7zpWuQ7uFWHYZI-MXtYKg5J6FkQnlAnmmfFu26qtnZfEK_puaqbE8"
+                  src="./img/machine.jpg"
                   alt="Card image cap"
                 />
                 <div class="card-body">
@@ -264,7 +259,7 @@
                     model on a Raspberry Pi.
                   </p>
                   <h4>Sample audio:</h4>
-                  <audio controls>
+                  <audio controls style="width: 100%;">
                     <source src="./audios/problema.wav" type="audio/mpeg" />
                     Your browser does not support the audio element.
                   </audio>
@@ -323,8 +318,8 @@
 
               <div class="col-12 col-md-6 col-img">
                 <img
-                  src="https://lh3.googleusercontent.com/proxy/oeMxT8X4ocUqZtmjS6PYfSBIk4NbCvf_Nao15AttxDtrBMsIhIvGMFXjXodrzFDjYfDbZ6h-HJixJPR-PPTKYPY9cREPbxHndMJqOTELM8DtWQqbdnyS431nxBqR0edkO-vOS5I"
-                  alt="Java"
+                  src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png"
+                  alt="js"
                   class="img-list"
                 />
               </div>
@@ -488,5 +483,13 @@
         </div>
       </div>
     </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
   </body>
 </html>
