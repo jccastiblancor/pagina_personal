@@ -10,9 +10,13 @@
 
 .avatar-lg {
   width: 100%;
-  max-width: 200px;
-  height: 100%;
-  max-height: 200px;
+  max-width: 300px;
+  height: auto;
+}
+
+div.media-body p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .row-content {
@@ -98,6 +102,7 @@ div.card-body p {
   padding-top: 25px;
   height: 0;
 }
+
 .videoWrapper iframe {
   border: 0px;
   position: absolute;
@@ -105,6 +110,12 @@ div.card-body p {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    padding-top: 100px;
+  }
 }
 
 /*
