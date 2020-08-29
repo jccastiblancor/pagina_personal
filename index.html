@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!--It is important to include the language of the webpage-->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Pagina personal</title>
@@ -8,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="#" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,27 +21,28 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
   </head>
 
   <body>
-    <!-- banner-->
-    <div
-      class="card card-image"
-      style="background-image: url('./img/banner.png');"
-    >
-      <div class=" text-center py-5 px-4 my-5">
-        <div>
-          <h1 class="card-title h1-responsive pt-3 mb-5 font-bold">
-            <strong>Juan Camilo Castiblanco</strong>
-          </h1>
-          <p class="mx-5 mb-5">
-            Welcome to my personal web page, here you can find information about
-            me and my projects.
-          </p>
+    <header>
+      <!-- banner-->
+      <div
+        class="card card-image"
+        style="background-image: url('./img/banner.png')"
+      >
+        <div class="text-center py-5 px-4 my-5">
+          <div>
+            <h1 class="card-title h1-responsive pt-3 mb-5 font-bold">
+              <strong>Juan Camilo Castiblanco</strong>
+            </h1>
+            <p class="mx-5 mb-5">
+              Welcome to my personal web page, here you can find information
+              about me and my projects.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- barra de navegación con las secciónes y enlaces a cada sección-->
     <div>
@@ -74,339 +76,341 @@
         </div>
       </nav>
     </div>
-
-    <!-- contenido principal -->
-    <div class="container-background">
-      <div class="container container-body">
-        <!-- presentacion personal y datos academicos-->
-        <section id="presentation">
-          <div class="row row-content">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <img src="./img/jc.jpeg" alt="foto" class="avatar avatar-lg" />
-            </div>
-            <div class="col-12 col-sm-6 col-lg-8">
-              <div class="media">
-                <div class="media-body" style="padding-left: 20px;">
-                  <h1>Juan Camilo</h1>
-                  <p class="d-none d-md-block">
-                    I am a resourceful and dedicated university student with excellent analytical skills and
-                    a demonstrated commitment. Strong organizational abilities with proven successes
-                    managing multiple academic projects. Well-rounded and professional team player that 
-                    effectively maintains working relationships with co-workers, supervisors, and clients.
-                  </p>
-                  <p>To download my cv click the following button</p>
-                  <a
-                  class="btn btn-danger"
-                  href="./docs/Juan_Camilo_Castiblanco_Rodríguez.pdf"
-                  >Download CV 
-                    <i 
-                    class="fa fa-file fa-lg"></i></i></a>
-                </div>
+    <!--It's important to use the main tag to highlight the gross content part of the information-->
+    <main>
+      <!-- contenido principal -->
+      <div class="container-background">
+        <div class="container container-body">
+          <!-- presentacion personal y datos academicos-->
+          <section id="presentation">
+            <div class="row row-content">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <img src="./img/jc.jpeg" alt="foto" class="avatar avatar-lg" />
               </div>
-            </div>
-            <div class="col-12">
-              <br />
-              <h2>Education</h2>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="media">
-                <img
-                  src="https://subcontracteu.com/uploads/pages/535eee07e8fd4c9fabc377cd464c1d74.png"
-                  alt="foto"
-                  class="avatar avatar-sm"
-                />
-                <div
-                  class="media-body"
-                  style="padding-left: 20px; padding-top: 15px;"
-                >
-                  <p>
-                    Electronics Engineering at Universidad de los Andes
-                  </p>
-                </div>
-              </div>
-              <br />
-              <div class="media">
-                <img
-                  src="https://www.eschoolnews.com/files/2016/12/computer-science-education.jpg"
-                  alt="foto"
-                  class="avatar avatar-sm"
-                />
-                <div
-                  class="media-body"
-                  style="padding-left: 20px; padding-top: 15px;"
-                >
-                  <p>
-                    Computer Science at Universidad de los Andes
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-center">
-              <div class="row" style="padding-top: 30px;">
-                <div class="col-6">
-                  <p>Fluid English</p>
-                </div>
-                <div class="col-6">
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star-half fa-lg"></i>
-                </div>
-                <div class="col-6">
-                  <p>Native Spanish</p>
-                </div>
-                <div class="col-6">
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                  <i class="fa fa-star fa-lg"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--Proyectos o trabajos en los que he participado-->
-        <div class="rwo row-content">
-          <section id="proyects">
-            <h2>Previous Work</h2>
-            <div class="card-group">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/robotica.jpeg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Robotics Proyect</h5>
-                  <p class="card-text">
-                    A robotics proyect that simulates the autonomous movement of
-                    a robot in a unsupervised enviroment. Using the ROS
-                    (Robotics Operating System) framework and some path planing
-                    algorithms like A* we were able to control the movement of
-                    the robot, the simulation was runned in the v-rep enviroment
-                    and the UI (User Interface) to saw the robot info and to
-                    indicate the destination point was builded using bootstrap,
-                    javascript and html.
-                  </p>
-                  <div class="embed-responsive embed-responsive-4by3">
-                    <video src="./img/robotics2.mp4" controls>
-                    </video>
+              <div class="col-12 col-sm-6 col-lg-8">
+                <div class="media">
+                  <div class="media-body" style="padding-left: 20px">
+                    <!--There should only be one h1 in a webpage. You should use css or bootstap to adequate size-->
+                    <h2 class="display-5">Juan Camilo</h2>
+                    <p class="d-none d-md-block">
+                      I am a resourceful and dedicated university student with
+                      excellent analytical skills and a demonstrated commitment.
+                      Strong organizational abilities with proven successes
+                      managing multiple academic projects. Well-rounded and
+                      professional team player that effectively maintains
+                      working relationships with co-workers, supervisors, and
+                      clients.
+                    </p>
+                    <p>To download my cv click the following button</p>
+                    <!--Yo had a closing extra i tag-->
+                    <a
+                      class="btn btn-danger"
+                      href="./docs/Juan_Camilo_Castiblanco_Rodríguez.pdf"
+                      >Download CV <i class="fa fa-file fa-lg"></i
+                    ></a>
                   </div>
-                  <p class="card-text">
-                    <small class="text-muted">
-                      <a
-                        href="https://github.com/jccastiblancor/proyecto_final_3"
-                        >See more ...</a
-                      >
-                    </small>
-                  </p>
                 </div>
               </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Steven Grinder Full stack development course
-                  </h5>
-                  <p class="card-text">
-                    Udemy course in which I build and deploy a fullstack web
-                    apps with NodeJS, React, Redux, Express, and MongoDB.
-                  </p>
-
-                  <p>
-                    I am currently working in this course some of the features
-                    of this course are
-                  </p>
-                  <ul>
-                    <li>Billing payments</li>
-                    <li>Handling Email</li>
-                    <li>Authentication</li>
-                  </ul>
-                  <p class="card-text">
-                    <small class="text-muted">
-                      <a href="https://git.heroku.com/serene-peak-35767.git">
-                        See more ...
-                      </a>
-                    </small>
-                  </p>
+              <div class="col-12">
+                <br />
+                <h2>Education</h2>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="media">
+                  <img
+                    src="https://subcontracteu.com/uploads/pages/535eee07e8fd4c9fabc377cd464c1d74.png"
+                    alt="foto"
+                    class="avatar avatar-sm"
+                  />
+                  <div
+                    class="media-body"
+                    style="padding-left: 20px; padding-top: 15px"
+                  >
+                    <p>Electronics Engineering at Universidad de los Andes</p>
+                  </div>
+                </div>
+                <br />
+                <div class="media">
+                  <img
+                    src="https://www.eschoolnews.com/files/2016/12/computer-science-education.jpg"
+                    alt="foto"
+                    class="avatar avatar-sm"
+                  />
+                  <div
+                    class="media-body"
+                    style="padding-left: 20px; padding-top: 15px"
+                  >
+                    <p>Computer Science at Universidad de los Andes</p>
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./img/machine.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Portable and Low-Cost Device for Audio Distress
-                    SignalRecognition in Urban Areas
-                  </h5>
-                  <p class="card-text">
-                    Togheter with a machine learning group, we design a portable
-                    and low cost device for audiodistress signal recognition in
-                    real urban scenarios. We build a database of audio recorded
-                    in real urban areas using a low costmicrophone, using this
-                    database, we trained different architectures of
-                    convolutional neural networks that processed temporal and
-                    frequency features to accurately recognize audio distress
-                    signals in noisy environments. Then, we deployed the trained
-                    model on a Raspberry Pi.
-                  </p>
-                  <h4>Sample audio:</h4>
-                  <audio controls style="width: 100%;">
-                    <source src="./audios/problema.wav" type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
-                  <p class="card-text">
-                    <small class="text-muted">
-                      <a href="https://github.com/jfgf11/Problema-Especial">
-                        See more ...
-                      </a>
-                    </small>
-                  </p>
+              <div class="col-12 col-md-6 text-center">
+                <div class="row" style="padding-top: 30px">
+                  <div class="col-6">
+                    <p>Fluid English</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star-half fa-lg"></i>
+                  </div>
+                  <div class="col-6">
+                    <p>Native Spanish</p>
+                  </div>
+                  <div class="col-6">
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                    <i class="fa fa-star fa-lg"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+
+          <!--Proyectos o trabajos en los que he participado-->
+          <div class="rwo row-content">
+            <section id="proyects">
+              <h2>Previous Work</h2>
+              <div class="card-group">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/robotica.jpeg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Robotics Proyect</h5>
+                    <p class="card-text">
+                      A robotics proyect that simulates the autonomous movement
+                      of a robot in a unsupervised enviroment. Using the ROS
+                      (Robotics Operating System) framework and some path
+                      planing algorithms like A* we were able to control the
+                      movement of the robot, the simulation was runned in the
+                      v-rep enviroment and the UI (User Interface) to saw the
+                      robot info and to indicate the destination point was
+                      builded using bootstrap, javascript and html.
+                    </p>
+                    <div class="embed-responsive embed-responsive-4by3">
+                      <video src="./img/robotics2.mp4" controls></video>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <a
+                          href="https://github.com/jccastiblancor/proyecto_final_3"
+                          >See more ...</a
+                        >
+                      </small>
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Windows_Settings_app_icon.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Steven Grinder Full stack development course
+                    </h5>
+                    <p class="card-text">
+                      Udemy course in which I build and deploy a fullstack web
+                      apps with NodeJS, React, Redux, Express, and MongoDB.
+                    </p>
+
+                    <p>
+                      I am currently working in this course some of the features
+                      of this course are
+                    </p>
+                    <ul>
+                      <li>Billing payments</li>
+                      <li>Handling Email</li>
+                      <li>Authentication</li>
+                    </ul>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <a href="https://git.heroku.com/serene-peak-35767.git">
+                          See more ...
+                        </a>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/machine.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Portable and Low-Cost Device for Audio Distress
+                      SignalRecognition in Urban Areas
+                    </h5>
+                    <p class="card-text">
+                      Togheter with a machine learning group, we design a
+                      portable and low cost device for audiodistress signal
+                      recognition in real urban scenarios. We build a database
+                      of audio recorded in real urban areas using a low
+                      costmicrophone, using this database, we trained different
+                      architectures of convolutional neural networks that
+                      processed temporal and frequency features to accurately
+                      recognize audio distress signals in noisy environments.
+                      Then, we deployed the trained model on a Raspberry Pi.
+                    </p>
+                    <h4>Sample audio:</h4>
+                    <audio controls style="width: 100%">
+                      <source src="./audios/problema.wav" type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <a href="https://github.com/jfgf11/Problema-Especial">
+                          See more ...
+                        </a>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--tecnologias en las que tengo experiencia-->
+          <section id="frameworks">
+            <div class="row row-content">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2>Programming Languajes</h2>
+                </div>
+
+                <div class="col-6 col-md-4 col-img">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"
+                    alt="Python"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-6 col-md-4 col-img">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                    alt="C"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-6 col-md-4 col-img">
+                  <img
+                    src="https://qph.fs.quoracdn.net/main-qimg-c43424186b9c089b9aa1d64c7f1989c1.webp"
+                    alt="Java"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-6 col-md-6 col-img">
+                  <img
+                    src="https://alexbruga.files.wordpress.com/2015/12/sql-logo.png"
+                    alt="Java"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6 col-img">
+                  <img
+                    src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png"
+                    alt="js"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-12 text-center">
+                  <h2>Frameworks</h2>
+                </div>
+
+                <div class="col-6 col-md-3 col-img">
+                  <img
+                    src="https://costaricamakers.com/wp-content/uploads/2020/01/ros-logo.png"
+                    alt="ROS"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-6 col-md-3 col-img">
+                  <img
+                    src="https://seeklogo.com/images/A/angular-logo-B76B1CDE98-seeklogo.com.png"
+                    alt="Angular"
+                    class="img-list"
+                  />
+                </div>
+
+                <div class="col-6 col-md-3 col-img">
+                  <!--Yo had one extra quotation marks-->
+                  <img src="./img/react.png" alt="React" class="img-list" />
+                </div>
+
+                <div class="col-6 col-md-3 col-img">
+                  <img
+                    src="https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png"
+                    alt="Django"
+                    class="img-list"
+                  />
+                </div>
+              </div>
+
+              <div class="row"></div>
+            </div>
+          </section>
+
+          <section id="contact">
+            <div class="row row-content">
+              <!--Formulario de contacto-->
+
+              <div class="col-12 offset-md-1 col-md-4 offset-md-1 top">
+                <h2>Contact</h2>
+                <p>
+                  If you want to get in contact please submit the following form
+                </p>
+              </div>
+              <div class="col-12 col-md-6">
+                <form>
+                  <div class="form-group">
+                    <label>Mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Text</label>
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter a description here"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <!--tecnologias en las que tengo experiencia-->
-        <section id="frameworks">
-          <div class="row row-content">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h2>Programming Languajes</h2>
-              </div>
-
-              <div class="col-6 col-md-4 col-img">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"
-                  alt="Python"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-6 col-md-4 col-img">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                  alt="C"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-6 col-md-4 col-img">
-                <img
-                  src="https://qph.fs.quoracdn.net/main-qimg-c43424186b9c089b9aa1d64c7f1989c1.webp"
-                  alt="Java"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-6 col-md-6 col-img">
-                <img
-                  src="https://alexbruga.files.wordpress.com/2015/12/sql-logo.png"
-                  alt="Java"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-12 col-md-6 col-img">
-                <img
-                  src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png"
-                  alt="js"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-12 text-center">
-                <h2>Frameworks</h2>
-              </div>
-
-              <div class="col-6 col-md-3 col-img">
-                <img
-                  src="https://costaricamakers.com/wp-content/uploads/2020/01/ros-logo.png"
-                  alt="ROS"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-6 col-md-3 col-img">
-                <img
-                  src="https://seeklogo.com/images/A/angular-logo-B76B1CDE98-seeklogo.com.png"
-                  alt="Angular"
-                  class="img-list"
-                />
-              </div>
-
-              <div class="col-6 col-md-3 col-img">
-                <img src="./img/react.png" alt="React" class="img-list"" />
-              </div>
-
-              <div class="col-6 col-md-3 col-img">
-                <img
-                  src="https://seeklogo.com/images/D/django-logo-F46C1DD95E-seeklogo.com.png"
-                  alt="Django"
-                  class="img-list"
-                />
-              </div>
-            </div>
-
-            <div class="row"></div>
-          </div>
-        </section>
-
-        <section id="contact">
-          <div class="row row-content">
-            <!--Formulario de contacto-->
-
-            <div class="col-12 offset-md-1 col-md-4 offset-md-1 top">
-              <h2>Contact</h2>
-              <p>
-                If you want to get in contact please submit the following form
-              </p>
-            </div>
-            <div class="col-12 col-md-6">
-              <form>
-                <div class="form-group">
-                  <label>Mail</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="form-group">
-                  <label>Phone</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div class="form-group">
-                  <label>Text</label>
-                  <textarea
-                    class="form-control"
-                    placeholder="Enter a description here"
-                    rows="3"
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Send</button>
-              </form>
-            </div>
-          </div>
-        </section>
       </div>
-    </div>
+    </main>
 
     <!-- Pie de pagina con información de contacto y links a redes sociales-->
     <footer class="page-footer">
@@ -415,9 +419,7 @@
           <div class="offset-1 col-5">
             <h5 class="text-uppercase">Details</h5>
             <ul class="list-unstyled">
-              <li>
-                Bogotá, Colombia
-              </li>
+              <li>Bogotá, Colombia</li>
               <li>
                 <i class="fa fa-phone fa-lg"></i>
                 tel:
@@ -426,9 +428,7 @@
               <li>
                 <i class="fa fa-envelope fa-lg"></i>
                 Mail
-                <a href="mailto:jcmilo29@gmail.com">
-                  jcmilo29@gmail.com
-                </a>
+                <a href="mailto:jcmilo29@gmail.com"> jcmilo29@gmail.com </a>
               </li>
             </ul>
           </div>
@@ -486,12 +486,20 @@
       </div>
     </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
