@@ -78,12 +78,10 @@ div.media-body p {
   text-align: center;
 }
 
-.fa-star {
+.fa-star , .fa-star-half{
   color: #f9d71c;
 }
-.fa-star-half {
-  color: #f9d71c;
-}
+
 
 .t {
   display: flex;
